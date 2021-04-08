@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>노트앱 | 회원가입 </title>
+        <link rel="icon" href="./assets/note.png">
+        <link rel="stylesheet" href="./register.css">
+    </head>
+    <body>
+        <header>
+            <div class="register__header-content">
+                <h1 class="register__header-title">노트앱</h1>
+            </div>
+        </header>
+        <main>
+            <section class="register-section">
+                <form method="POST" action="/register" id="register">
+                    <div class="register-wrapper">
+                        <div class="register-id-wrapper">
+                            <img class="register-id-icon" src="./assets/user.png" alt="아이디 입력 아이콘"/>
+                            <input class="register-id" type="text" name="email"  id="email" placeholder="peacemain@email.com"/>
+                        </div>
+                        <div class="register-password-wrapper">
+                            <img class="register-password-icon" src="./assets/lock.png" alt="비밀번호 입력 아이콘"/>
+                            <input class="register-password" type="password" id="password" name="password" placeholder="password" />
+                        </div>
+                        <div class="register-password-wrapper">
+                            <img class="register-password-icon" src="./assets/lock.png" alt="비밀번호 재입력 아이콘"/>
+                            <input class="register-password" type="password" id="password-check" name="password-check" placeholder="password check" />
+                        </div>
+                    </div>
+                </form>
+                <div class="register-title-wrapper">
+                    <h2 class="register-title"></h2>
+                </div>
+                <button class="register__submit-button" onclick="register()">
+                    회원가입
+                    <!-- <div class="register__submit-button-text">회원가입</div> -->
+                </button>
+            </section>
+        </main>
+        <script src="./register.js"></script>
+    </body>
+</html>

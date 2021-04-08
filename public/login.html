@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>노트앱 | 로그인 </title>
+        <link rel="icon" href="./assets/note.png">
+        <link rel="stylesheet" href="./login.css">
+    </head>
+    <body>
+        <header>
+            <div class="login__header-content">
+                <h1 class="login__header-title">노트앱</h1>
+            </div>
+        </header>
+        <main>
+            <section class="login-section">
+                <form method="POST" action="/login" id="login">
+                    <div class="login-title-wrapper">
+                        <h2 class="login-title">로그인</h2>
+                    </div>
+                    <div class="login-wrapper">
+                        <div class="login-id-wrapper">
+                            <img class="login-id-icon" src="./assets/user.png" alt="아이디 입력 아이콘"/>
+                            <input class="login-id" type="text" name="email" id="email"  placeholder="peacemain@email.com"/>
+                        </div>
+                        <div class="login-password-wrapper">
+                            <img class="login-password-icon" src="./assets/lock.png" alt="비밀번호 입력 아이콘"/>
+                            <input class="login-password" type="text" name="password" id="password" placeholder="***********" />
+                        </div>
+                    </div>
+                </form>
+                <button class="login__submit-button" onclick="login()">
+                    <div class="login__submit-button-text">로그인</div>
+                </button>
+                <form method="GET" action="/register" id="register"></form>
+                <button class="login__submit-button" onclick="register()">
+                    <div class="login__submit-button-text">회원가입</div>
+                </button>
+            </section>
+        </main>
+        <script src="./login.js"></script>
+    </body>
+</html>

@@ -1,0 +1,177 @@
+html, body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 54px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.edit__header-content {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit__header-title {
+    font-size : 16px;
+    margin: 0;
+}
+
+.edit__header-button {
+    border: none;
+    background: none;
+    font-weight: bold;
+    font-size: 10px;
+    outline: none;
+    color: #e76e54;
+    cursor: pointer;
+}
+
+main {
+    padding: 36px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.edit__note-section{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.edit__note-title-wrapper {
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.edit__note-title-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.edit__note-title-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}
+
+.edit__note-title {
+    font-weight: 100;
+    font-size: 16px;
+    margin: 0;
+}
+
+.edit__note-title-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+        background: none;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.edit__note-delete-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.edit__note-delete {
+    font-weight: bold;
+    font-size: 10px;
+    margin: 0;
+    color: #E76E54;
+    line-height: 14px;
+}
+
+.edit__note-input {
+    background: #F6F6F6;
+    border-radius: 5px;
+    padding: 24px 24px;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.edit__submit-button {
+    border: none;
+    background: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    border: 1px solid #e9e9e9;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.edit__submit-button-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 11px;
+}
+
+.edit__submit-button-text {
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.edit__note-contents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+    row-gap: 25px;
+}
+
+.edit__note-content {
+    width: 250px;
+    border: 1px solid #e9e9e9;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 16px;
+}
+
+.edit-note-nav-wrapper {
+    width: 800px;
+    display: flex;
+    align-items: center;
+}
+
+.edit__note-nav {
+    display: flex;
+    background: none;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin: 0;
+}
+
+.edit__note-nav-icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 12px;
+}
+
+.edit__note-nav-text {
+    font-size : 12px;
+    font-weight: 100;
+}
